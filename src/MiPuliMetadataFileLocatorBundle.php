@@ -20,5 +20,4 @@ class MiPuliMetadataFileLocatorBundle extends Bundle
     {
         $container->addCompilerPass(new SetMetadataDriverPass());
     }
-
 }

@@ -7,6 +7,8 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 
 /**
  * @author Alexander Miehe <alexander.miehe@movingimage.com>
+ *
+ * @codeCoverageIgnore
  */
 class SetMetadataDriverPass implements CompilerPassInterface
 {
@@ -24,5 +26,4 @@ class SetMetadataDriverPass implements CompilerPassInterface
             'mi.puli_metadata_file_locator_bundle.serializer.metadata.puli_chain_driver'
         );
     }
-
 }
