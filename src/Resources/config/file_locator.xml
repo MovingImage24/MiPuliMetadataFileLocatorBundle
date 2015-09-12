@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+    <services>
+
+        <service id="mi.puli_metadata_file_locator_bundle.serializer.puli_file_locator" class="Mi\Puli\Metadata\Driver\PuliDiscoveryFileLocator" public="false">
+            <argument type="service" id="puli.discovery" />
+        </service>
+
+        <service id="mi.puli_metadata_file_locator_bundle.serializer.metadata.puli_chain_driver" class="%jms_serializer.metadata.chain_driver.class%" public="false">
+            <argument type="collection">
+                <argument type="service" id="mi.puli_metadata_file_locator_bundle.serializer.metadata.yaml_driver" />
+                <argument type="service" id="mi.puli_metadata_file_locator_bundle.serializer.metadata.xml_driver" />
+                <argument type="service" id="mi.puli_metadata_file_locator_bundle.serializer.metadata.php_driver" />
+                <argument type="service" id="jms_serializer.metadata.chain_driver" />
+            </argument>
+        </service>
+
+        <service id="mi.puli_metadata_file_locator_bundle.serializer.metadata.yaml_driver" class="%jms_serializer.metadata.yaml_driver.class%" public="false">
+            <argument type="service" id="mi.puli_metadata_file_locator_bundle.serializer.puli_file_locator" />
+        </service>
+        <service id="mi.puli_metadata_file_locator_bundle.serializer.metadata.xml_driver" class="%jms_serializer.metadata.xml_driver.class%" public="false">
+            <argument type="service" id="mi.puli_metadata_file_locator_bundle.serializer.puli_file_locator" />
+        </service>
+        <service id="mi.puli_metadata_file_locator_bundle.serializer.metadata.php_driver" class="%jms_serializer.metadata.php_driver.class%" public="false">
+            <argument type="service" id="mi.puli_metadata_file_locator_bundle.serializer.puli_file_locator" />
+        </service>
+
+    </services>
+</container>
