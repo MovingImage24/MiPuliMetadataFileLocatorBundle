@@ -4,6 +4,7 @@
 [![Latest Unstable Version](https://poser.pugx.org/mi/puli-metadata-file-locator-bundle/v/unstable)](https://packagist.org/packages/mi/puli-metadata-file-locator-bundle)
 [![Total Downloads](https://poser.pugx.org/mi/puli-metadata-file-locator-bundle/downloads)](https://packagist.org/packages/mi/puli-metadata-file-locator-bundle)
 [![License](https://poser.pugx.org/mi/puli-metadata-file-locator-bundle/license)](https://packagist.org/packages/mi/puli-metadata-file-locator-bundle)
+[![StyleCI](https://styleci.io/repos/42353685/shield)](https://styleci.io/repos/42353685)
 
 ## Overview
 
