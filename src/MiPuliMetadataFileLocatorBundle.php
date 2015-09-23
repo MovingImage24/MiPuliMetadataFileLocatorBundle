@@ -14,7 +14,7 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
 class MiPuliMetadataFileLocatorBundle extends Bundle
 {
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function build(ContainerBuilder $container)
     {
