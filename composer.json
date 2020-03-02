@@ -9,6 +9,12 @@
       "email": "alexander.miehe@movingimage.com"
     }
   ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://bitbucket.org/movingimage24/metadata-puli-file-locator.git"
+    }
+  ],
   "minimum-stability": "beta",
   "require": {
     "jms/serializer-bundle": "^1.0",
